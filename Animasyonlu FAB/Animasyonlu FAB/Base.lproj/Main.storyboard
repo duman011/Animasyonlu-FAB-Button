@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animasyonlu_FAB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11X-M0-zBf">
+                                <rect key="frame" x="303" y="747" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="U6F-zA-Yye"/>
+                                    <constraint firstAttribute="height" constant="60" id="byA-Wp-lTA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabMain"/>
+                                <connections>
+                                    <action selector="fabMainTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hlQ-AH-wda"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFs-2i-OHO">
+                                <rect key="frame" x="303" y="657" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="XAd-mB-K5i"/>
+                                    <constraint firstAttribute="height" constant="60" id="nZC-8P-cQu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabBirinci"/>
+                                <connections>
+                                    <action selector="fabBirinciTikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="anE-ET-zg3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W13-za-8GC">
+                                <rect key="frame" x="303" y="567" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="OaI-h4-gNa"/>
+                                    <constraint firstAttribute="height" constant="60" id="eNE-fj-W9k"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="fabIkinci"/>
+                                <connections>
+                                    <action selector="fabikinciYikla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YnC-Os-YOe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fFs-2i-OHO" firstAttribute="top" secondItem="W13-za-8GC" secondAttribute="bottom" constant="30" id="22S-EH-RZT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W13-za-8GC" secondAttribute="trailing" constant="30" id="EF4-K7-Lk1"/>
+                            <constraint firstAttribute="bottom" secondItem="11X-M0-zBf" secondAttribute="bottom" constant="45" id="L3e-pv-Jme"/>
+                            <constraint firstItem="11X-M0-zBf" firstAttribute="top" secondItem="fFs-2i-OHO" secondAttribute="bottom" constant="30" id="ic8-km-VH8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fFs-2i-OHO" secondAttribute="trailing" constant="30" id="jxT-TS-uIK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="11X-M0-zBf" secondAttribute="trailing" constant="30" id="k8o-ux-e9p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fabBirinci" destination="fFs-2i-OHO" id="gl4-Xj-36r"/>
+                        <outlet property="fabMain" destination="11X-M0-zBf" id="69Z-2u-u6j"/>
+                        <outlet property="fabikinci" destination="W13-za-8GC" id="a9V-0s-tGu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fabBirinci" width="36" height="36"/>
+        <image name="fabIkinci" width="36" height="36"/>
+        <image name="fabMain" width="36" height="36"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
